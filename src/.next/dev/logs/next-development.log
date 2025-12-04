@@ -1,0 +1,31 @@
+[00:00:01.330] Server  LOG      ✓ Ready in 946ms
+[00:00:03.376] Server  ERROR   C:\Users\User\Documents\vscode\personal\cover-letter\src\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:03.378] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button onClick={function dummyHandler} children=...>
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:00:04.066] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
+  <button onClick={function dummyHandler} children=...>
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:00:24.442] Server  ERROR   C:\Users\User\Documents\vscode\personal\cover-letter\src\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:24.443] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <... onClick={function dummyHandler}>
+               ^^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:00:24.849] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
+  <... onClick={function dummyHandler}>
+               ^^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[00:00:32.242] Browser LOG     Button clicked
+[00:00:32.396] Browser LOG     Button clicked
+[00:00:32.568] Browser LOG     Button clicked
+[00:00:32.709] Browser LOG     Button clicked
+[00:00:34.020] Browser LOG     Button clicked
+[00:00:34.159] Browser LOG     Button clicked
+[00:00:34.315] Browser LOG     Button clicked
+[00:00:34.472] Browser LOG     Button clicked
+[00:00:34.627] Browser LOG     Button clicked
+[00:00:34.781] Browser LOG     Button clicked
+[00:00:34.939] Browser LOG     Button clicked
+[00:00:35.068] Browser LOG     Button clicked

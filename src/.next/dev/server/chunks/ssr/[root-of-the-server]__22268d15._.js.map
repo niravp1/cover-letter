@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/User/Documents/vscode/personal/cover-letter/frontend/my-app/app/file/page.tsx"],"sourcesContent":["import button from ''\r\nexport default function Page(){\r\n    return <h1> Hello</h1>\r\n}"],"names":[],"mappings":";;;;;;AACe,SAAS;IACpB,qBAAO,6TAAC;kBAAG;;;;;;AACf"}}]
+}
