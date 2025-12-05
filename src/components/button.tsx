@@ -1,8 +1,9 @@
-"use client";
-interface ButtonProps {
-  onClick: () => void;
-}
+'use client';
+export default function Button(){
+  let handleClick = () => {
+      return alert("uploaded file");
+  }
+  return (<button onClick={handleClick}> Upload File</button>
 
-export default function Button({ onClick }: ButtonProps) {
-  return <button onClick={onClick}>Button to be Clicked</button>;
+  )
 }

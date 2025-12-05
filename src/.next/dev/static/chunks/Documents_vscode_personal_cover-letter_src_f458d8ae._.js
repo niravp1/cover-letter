@@ -7,16 +7,19 @@ __turbopack_context__.s([
     ()=>Button
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$vscode$2f$personal$2f$cover$2d$letter$2f$src$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/vscode/personal/cover-letter/src/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-"use client";
+'use client';
 ;
-function Button({ onClick }) {
+function Button() {
+    let handleClick = ()=>{
+        return alert("uploaded file");
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$vscode$2f$personal$2f$cover$2d$letter$2f$src$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-        onClick: onClick,
-        children: "Button to be Clicked"
+        onClick: handleClick,
+        children: " Upload File"
     }, void 0, false, {
         fileName: "[project]/Documents/vscode/personal/cover-letter/src/components/button.tsx",
-        lineNumber: 7,
-        columnNumber: 10
+        lineNumber: 6,
+        columnNumber: 11
     }, this);
 }
 _c = Button;
