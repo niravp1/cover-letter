@@ -28,13 +28,8 @@ def create_app(test_config=None):
     @app.route('/hello')
     def hello():
         return 'Hello, World!'
-
+    from . import db
+    db.init_db()
     return app
 
-conn = psycopg2.connect(
-    host=os.getenv('DB_HOST'),
-    database=os.getenv('DB_NAME'),
-    user=os.getenv('DB_USER'),
-    password=os.getenv('DB_PASS')
-
-)
+# see if table has been created
