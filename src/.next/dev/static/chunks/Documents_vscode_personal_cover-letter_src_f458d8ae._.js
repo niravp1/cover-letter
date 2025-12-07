@@ -18,8 +18,12 @@ function Button() {
     let handleClick = ()=>{
         uploadRef.current?.click();
     };
-    let printSuccess = ()=>{
-        return console.log("success");
+    let handleUpload = (event)=>{
+        if (event.target.files == null) {
+            console.log("File was unsuccessful");
+            return;
+        }
+        const file = event.target.files[0];
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$vscode$2f$personal$2f$cover$2d$letter$2f$src$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$vscode$2f$personal$2f$cover$2d$letter$2f$src$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
@@ -28,20 +32,21 @@ function Button() {
                 children: " Upload File"
             }, void 0, false, {
                 fileName: "[project]/Documents/vscode/personal/cover-letter/src/components/button.tsx",
-                lineNumber: 16,
-                columnNumber: 3
+                lineNumber: 23,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$vscode$2f$personal$2f$cover$2d$letter$2f$src$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                 type: "file",
-                onChange: printSuccess,
-                ref: uploadRef,
+                accept: ".docx, .pdf, .txt",
                 style: {
                     display: 'none'
-                }
+                },
+                onChange: handleUpload,
+                ref: uploadRef
             }, void 0, false, {
                 fileName: "[project]/Documents/vscode/personal/cover-letter/src/components/button.tsx",
-                lineNumber: 17,
-                columnNumber: 3
+                lineNumber: 24,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true);
