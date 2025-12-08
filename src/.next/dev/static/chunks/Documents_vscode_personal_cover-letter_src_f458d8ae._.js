@@ -12,9 +12,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$vscode$2f$perso
 var _s = __turbopack_context__.k.signature();
 'use client';
 ;
+;
 function Button() {
     _s();
+    const [errorMessage, setErrorMessage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$vscode$2f$personal$2f$cover$2d$letter$2f$src$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const uploadRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$vscode$2f$personal$2f$cover$2d$letter$2f$src$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const allowedTypes = [
+        'application/pdf',
+        'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+    ];
     let handleClick = ()=>{
         uploadRef.current?.click();
     };
@@ -24,6 +30,11 @@ function Button() {
             return;
         }
         const file = event.target.files[0];
+        if (allowedTypes.includes(file.type)) {
+        // add to database
+        } else {
+            setErrorMessage('This file type is not supported.');
+        }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$vscode$2f$personal$2f$cover$2d$letter$2f$src$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$vscode$2f$personal$2f$cover$2d$letter$2f$src$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
@@ -32,7 +43,7 @@ function Button() {
                 children: " Upload File"
             }, void 0, false, {
                 fileName: "[project]/Documents/vscode/personal/cover-letter/src/components/button.tsx",
-                lineNumber: 23,
+                lineNumber: 31,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$vscode$2f$personal$2f$cover$2d$letter$2f$src$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -45,13 +56,23 @@ function Button() {
                 ref: uploadRef
             }, void 0, false, {
                 fileName: "[project]/Documents/vscode/personal/cover-letter/src/components/button.tsx",
-                lineNumber: 24,
+                lineNumber: 32,
                 columnNumber: 7
-            }, this)
+            }, this),
+            errorMessage ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$vscode$2f$personal$2f$cover$2d$letter$2f$src$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                children: [
+                    " ",
+                    errorMessage
+                ]
+            }, void 0, true, {
+                fileName: "[project]/Documents/vscode/personal/cover-letter/src/components/button.tsx",
+                lineNumber: 33,
+                columnNumber: 23
+            }, this) : null
         ]
     }, void 0, true);
 }
-_s(Button, "SakckBXb+XvvYQAxjxb/XJytYvw=");
+_s(Button, "OW9bHIECY75crkVjwdxoF5mIR/8=");
 _c = Button;
 var _c;
 __turbopack_context__.k.register(_c, "Button");
