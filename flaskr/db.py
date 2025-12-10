@@ -11,12 +11,12 @@ def init_db():
         )
     cur = conn.cursor()
     add_db(conn,cur)
-def add_db(conn,cur: cursor):
+def add_db(conn, cur: cursor):
     cur.execute(""" 
                 INSERT INTO files (id, dateof)
                 VALUES (%s, %s);
                  """,
-                (1, datetime.date(2025,12,5)))
+                (4, datetime.date(2025,12,6)))
     conn.commit()
 
 

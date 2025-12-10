@@ -10,7 +10,7 @@ export default function Button() {
   let handleClick = () => {
     uploadRef.current?.click();
   }
-  let handleUpload = (event: ChangeEvent<HTMLInputElement> ) => {
+  let  handleUpload = async (event: ChangeEvent<HTMLInputElement> ) => {
 
    if (event.target.files == null) {
       console.log("File was unsuccessful");
@@ -18,7 +18,14 @@ export default function Button() {
    }
     const file = event.target.files[0];
     if (allowedTypes.includes(file.type)){
-      // add to database
+      try{ 
+        const response = await fetch('http://localhost:5000/upload', {method: "POST", body: file})
+        
+      }
+      catch (error)
+      {
+        console.error("Error:", error);
+      }
     }
     else{
       setErrorMessage('This file type is not supported.')

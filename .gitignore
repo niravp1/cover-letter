@@ -12,11 +12,10 @@ node_modules/
 !.yarn/versions
 # testing
 coverage
-
 # next.js
 .next/
 out/
-
+venv/
 # production
 build/
 
