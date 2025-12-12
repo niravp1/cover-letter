@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/User/Documents/vscode/personal/cover-letter/src/components/button.tsx"],"sourcesContent":["\r\nexport default function Button (){\r\n  function handleClick(){\r\n      alert(\"uploaded file\");\r\n  }\r\n  return (<button onClick={handleClick}> Upload File</button>\r\n\r\n  )\r\n}"],"names":[],"mappings":";;;;;;AACe,SAAS;IACtB,SAAS;QACL,MAAM;IACV;IACA,qBAAQ,2SAAC;QAAO,SAAS;kBAAa;;;;;;AAGxC"}},
-    {"offset": {"line": 41, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/User/Documents/vscode/personal/cover-letter/src/app/file/page.tsx"],"sourcesContent":["import Button from \"@/components/button\";\r\n\r\nexport default function Page() {\r\n return <Button/> \r\n}"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACvB,qBAAO,2SAAC,6LAAM;;;;;AACf"}}]
-}
