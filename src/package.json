@@ -6,8 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "lint:fix": "eslint --fix"
+    "eslint": "eslint",
+    "eslint:fix": "eslint --fix",
+    "format": "prettier --write .",
+    "check-format": "prettier --check ."
   },
   "dependencies": {
     "next": "16.0.6",
@@ -25,6 +27,8 @@
     "eslint-config-next": "16.0.6",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.5.0",
+    "prettier": "^3.7.4",
+    "prettier-plugin-tailwindcss": "^0.7.2",
     "tailwindcss": "^4.1.18",
     "typescript": "^5",
     "typescript-eslint": "^8.49.0"
