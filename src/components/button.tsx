@@ -8,7 +8,6 @@ export default function Button() {
   const uploadRef = useRef<HTMLInputElement>(null);
   const allowedTypes = [
     "application/pdf",
-    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
   ];
   const handleClick = () => {
     uploadRef.current?.click();

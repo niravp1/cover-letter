@@ -24,7 +24,7 @@ def create_app(test_config=None):
     @app.route('/upload', methods=['POST'])
     def upload_file():
         if request.method == 'POST':
-            ALLOWED_EXTENSIONS = {'pdf', 'docx'}
+            ALLOWED_EXTENSIONS = {'pdf'}
 
             def check_file(filename: str):
                 return '.' in filename and filename.rsplit('.',1)[1].lower() in ALLOWED_EXTENSIONS

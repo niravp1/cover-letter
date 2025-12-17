@@ -5,11 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "eslint": "eslint",
-    "eslint:fix": "eslint --fix",
-    "format": "prettier --write .",
-    "check-format": "prettier --check ."
+    "start": "next start"
   },
   "dependencies": {
     "next": "16.0.6",
